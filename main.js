@@ -1,8 +1,8 @@
 const divnew=document.querySelector('.agregado')
 const pendientes=document.querySelector('.pendientes')
-let cont=0
+let cont3=0
 let cont2=0
-pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont}`
+pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont3}`
 
 agregar.addEventListener('click',()=>{
     const divnew2 =document.createElement('div')
@@ -15,8 +15,8 @@ agregar.addEventListener('click',()=>{
     divnew2.textContent=tarea.value
     divnew.append(divnew2)
     divnew2.append(eliminar2)
-    cont++
-    pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont}`
+    cont3++
+    pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont3}`
 
 
 })
@@ -25,8 +25,8 @@ agregado.addEventListener('click',(event)=>{
         const papa = event.target.parentElement
         agregado.removeChild(papa)
         cont2++
-        cont--
-        pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont}`
+        cont3--
+        pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont3}`
     }
 })
 tarea.addEventListener('click',()=>{
