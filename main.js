@@ -29,3 +29,6 @@ agregado.addEventListener('click',(event)=>{
         pendientes.innerHTML=`Tareas realizadas ${cont2} y tareas pendientes ${cont}`
     }
 })
+tarea.addEventListener('click',()=>{
+    tarea.value=''
+})
